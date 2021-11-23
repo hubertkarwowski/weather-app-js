@@ -127,30 +127,6 @@ function getLocation() {
             },
           },
         });
-
-        let weatherId = data.weather[0].id;
-        if (weatherId >= 200 && weatherId <= 232) {
-          icon.classList.add("fas", "fa-bolt");
-          icon2.classList.add("fas", "fa-bolt");
-        } else if (weatherId >= 300 && weatherId <= 321) {
-          icon.classList.add("fas", "fa-cloud-showers-heavy");
-          icon2.classList.add("fas", "fa-cloud-showers-heavy");
-        } else if (weatherId >= 500 && weatherId <= 531) {
-          icon.classList.add("fas", "fa-cloud-showers-heavy");
-          icon2.classList.add("fas", "fa-cloud-showers-heavy");
-        } else if (weatherId >= 600 && weatherId <= 622) {
-          icon.classList.add("fas", "fa-snowflake");
-          icon2.classList.add("fas", "fa-snowflake");
-        } else if (weatherId >= 701 && weatherId <= 781) {
-          icon.classList.add("fas", "fa-smog");
-          icon2.classList.add("fas", "fa-smog");
-        } else if (weatherId === 800) {
-          icon.classList.add("fas", "fa-sun");
-          icon2.classList.add("fas", "fa-sun");
-        } else {
-          icon.classList.add("fas", "fa-cloud");
-          icon2.classList.add("fas", "fa-cloud");
-        }
       });
   }
 
